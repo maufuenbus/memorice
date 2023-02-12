@@ -10,11 +10,11 @@ let temporizador = false;
 let timer = 60;
 let timerInicial = timer;
 let tiempoRegresivoId = null;
-let winAudio = new Audio('/audio/win.wav')
-let loseAudio = new Audio('/audio/lose.wav')
-let clickAudio = new Audio('/audio/click.wav')
-let rightAudio = new Audio('/audio/right.wav')
-let wrongAudio = new Audio('/audio/wrong.wav')
+let winAudio = new Audio('./audio/win.wav')
+let loseAudio = new Audio('./audio/lose.wav')
+let clickAudio = new Audio('./audio/click.wav')
+let rightAudio = new Audio('./audio/right.wav')
+let wrongAudio = new Audio('./audio/wrong.wav')
 
 //apuntandor html
 let mostrarMovimientos = document.getElementById('movimientos')
@@ -45,7 +45,7 @@ function contarTiempo() {
 function bloquearTarjetas() {
     for (let i = 0; i <= 63; i++) {
         let tarjetaBloada = document.getElementById(i);
-        tarjetaBloada.innerHTML = `<img src="/img/${numeros[i]}.png" alt="">`;;
+        tarjetaBloada.innerHTML = `<img src="./img/${numeros[i]}.png" alt="">`;;
         tarjetaBloada.disabled = true;
     }
 }
@@ -64,7 +64,7 @@ function destapar(id) {
         //mostrar primer elemento
         tarjeta1 = document.getElementById(id);
         primerResultado = numeros[id];
-        tarjeta1.innerHTML = `<img src="/img/${primerResultado}.png" alt="">`;
+        tarjeta1.innerHTML = `<img src="./img/${primerResultado}.png" alt="">`;
         clickAudio.play();
         //deshabilitar primer boton
         tarjeta1.disabled = true;
@@ -72,7 +72,7 @@ function destapar(id) {
         //mostrar segundo elemento
         tarjeta2 = document.getElementById(id);
         segundoResultado = numeros[id];
-        tarjeta2.innerHTML = `<img src="/img/${segundoResultado}.png" alt="">`;;
+        tarjeta2.innerHTML = `<img src="./img/${segundoResultado}.png" alt="">`;;
 
         ////deshabilitar segundo boton
         tarjeta2.disabled = true;
