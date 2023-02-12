@@ -1,0 +1,103 @@
+body{
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+
+.titulo{
+    text-align: center;
+}
+
+.section1{
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+}
+
+tr {
+    display: flex;
+}
+
+.carta{
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #000000;
+    width: 100px;
+    height: 100px;
+}
+img{
+    
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.section2{
+    background-color: rgba(56, 53, 53, 0.425);
+    border-radius: 8px ;
+    width: 250px;
+    height: 450px;
+    padding: 0 20px;
+    margin: 5px;
+}
+.section2 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.estadisticas{
+    border: 1px solid white;
+    height: 105px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+.boton-restart{
+    margin-top: 5px;
+    border-radius: 5px;
+    float: right;
+    background-color: rgb(37, 45, 158);
+}
+@media (max-width: 1250px){
+    .page-wrapper{
+        justify-content: center;
+    }
+    .section2{
+        margin-top: 5px;
+        display: inline-flex;
+        width: 700px;
+        height: fit-content;
+        padding: 5px 5px;
+    }
+
+    .boton-restart{
+        width: 110px;
+        margin:15px ;
+        height: 80px;
+    }
+    .btn-carga button{
+        width: 150px;
+        justify-content: center;
+    }
+}
+
+
+
+
+
